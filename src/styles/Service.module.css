@@ -1,0 +1,31 @@
+.cont {
+    width: 300px;
+    width: 37%;
+    border: 1px solid;
+    margin: 5%;
+    padding: 1%;
+    padding-bottom: 3%;
+    background: #fefefe2b;
+    transition:  all 1s;
+}
+.cont:hover {
+    background: #fefefec3;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.img {
+    width: 29%;
+}
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.description {
+    font-size: 15px;
+    margin-top: 1%;
+    padding: 0 1%;
+}

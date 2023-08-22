@@ -1,0 +1,93 @@
+.cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+    padding-bottom: 0;
+    padding-left: 18%;
+    flex-wrap: wrap;
+}
+.titleCont {
+    font-size: 55px;
+    text-align: initial;
+}
+.iAm {
+    color: #fefefe;
+    font-size: 32px;
+    font-family: 'Russo One', sans-serif;
+}
+.span {
+    color: #fefefe;
+    font-size: 70px;
+    line-height: 0;
+    font-family: 'Russo One', sans-serif;
+}
+.imgCont {
+    width: 40%;
+    border: 3px solid;
+    transition: all 1s;
+}
+.img {
+    width: 100%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+.cont2 {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+.btnCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 200px;
+    position: relative;
+    top: -22vh;
+    left: 9.5vw;
+}
+.btnBlack {
+    width: 100%;
+    padding: 6% 22%;
+    border: none;
+    outline: none;
+    background: #000;
+    color: #fefefe;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(45deg, #000, #000, #ff3a5f, #f0b139);
+    background-size: 350%;
+    background-position-x: 0;
+    transition: all 1s;
+}
+.btnWhite {
+    width: 100%;
+    padding: 6% 22%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(45deg, #fefefe, #fefefe, #dcf450, #1bb9b9);
+    background-size: 350%;
+    background-position-x: 0;
+    transition: all 1s;
+    color: #000;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.textCont {
+    width: 44%;
+    text-align: end;
+    margin-left: 4%;
+    transition: all 1s;
+}
+.aboutMe {
+    font-size: 25px;
+    color: #fefefe;
+    font-weight: 600;
+    font-family: 'Russo One', sans-serif;
+}

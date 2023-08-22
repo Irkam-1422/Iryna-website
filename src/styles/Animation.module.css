@@ -1,0 +1,11 @@
+.left {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+.right {
+    opacity: 0;
+    transform: translateX(50%);
+}
+.hidden {
+    opacity: 0;
+}

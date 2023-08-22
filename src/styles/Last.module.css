@@ -1,0 +1,39 @@
+.offer {
+    font-size: 55px;
+    text-align: end;
+    padding: 4%;
+    padding-bottom: 0;
+    color: #fefefe;
+    border-bottom: 1px solid;
+    position: relative;
+    top: -15vh;
+    margin-bottom: -7vh;
+    font-family: 'Russo One', sans-serif;
+    /* position: absolute; */
+}
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    position: relative;
+}
+.techs {
+    width: 37%;
+    margin: 5%;
+    padding: 1%;
+    position: relative;
+    top: 4vh;
+}
+.text {
+    font-size: 20px;
+    width: 60%;
+    text-align: end;
+    margin-left: 40%;
+    margin-top: -21%;
+    color: #fefefe;
+    font-weight: 600;
+}
+.img {
+    width: 100%;
+}
