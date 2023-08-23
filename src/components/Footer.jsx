@@ -2,6 +2,7 @@ import React, {useRef,useEffect}  from 'react'
 import styles from '../styles/Footer.module.css'
 import anim from '../styles/Animation.module.css'
 import observer from '../observers.js'
+import emailjs from 'emailjs-com'
 
 export const Footer = () => {
 
@@ -9,6 +10,7 @@ export const Footer = () => {
   const inp2 = useRef(null)
   const inp3 = useRef(null)
   const inp4 = useRef(null)
+  const form = useRef(null)
 
   useEffect(() => {
     const inps = [inp1,inp2,inp3,inp4]
@@ -16,6 +18,25 @@ export const Footer = () => {
         if (inps[i].current) observer(`${anim.right}`).observe(inps[i].current)
     }
   },[])
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm(
+        "personal_website1422",
+        "template_cjx31w9",
+        form.current,
+        "cNS0RvHP3DClgf7RI"
+    ).then(
+        result => {
+            console.log(result.text)
+            alert('Your email was sent!')
+            inp1.current.value = ''
+            inp2.current.value = ''
+            inp3.current.value = ''    
+        },
+        error => console.log(error.text)
+    )
+  }
  
   return (
     <div id='footer' className='container c2'>
@@ -43,7 +64,7 @@ export const Footer = () => {
                 </li>
                 </ul>
             </div>
-            <form className={styles.form}>
+            <form className={styles.form} ref={form} onSubmit={sendEmail}>
                 <div className={styles.title2}>Feel free to drop me a message!</div>
                 <input ref={inp1} type="text" placeholder='name'/>
                 <input ref={inp2} type="text" placeholder='email'/>

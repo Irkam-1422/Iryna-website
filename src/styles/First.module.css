@@ -55,7 +55,7 @@
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 600;
-    cursor: pointer;
+    cursor: none;
     background: linear-gradient(45deg, #000, #000, #ff3a5f, #f0b139);
     background-size: 350%;
     background-position-x: 0;
@@ -75,7 +75,7 @@
     transition: all 1s;
     color: #000;
     margin-top: 2%;
-    cursor: pointer;
+    cursor: none;
 }
 .textCont {
     width: 44%;

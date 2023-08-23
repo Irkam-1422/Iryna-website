@@ -11,13 +11,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  background-size: cover;
-  background-image: url('./assets/bg.png');
+
+  cursor: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.colored {
+  background-size: cover;
+  background-image: url('./assets/bg.png');
+  position: relative;
+  z-index: 5;
 }
 
 .container {
@@ -42,3 +49,27 @@ code {
   /* background-image: url('./assets/bg_3.png'); */
   padding-bottom: 13%;
 }
+
+.cursor {
+  height: 40px;
+  width: 40px;     
+  pointer-events: none;
+  position: absolute;
+  border: 2px solid #fefefe;
+  background: #fefefe87;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: transform .5s;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.point {
+  position: relative;
+  top: -32%;
+  color: #fefefe; 
+  font-size: 40px;
+}
+

@@ -1,0 +1,160 @@
+.cont {
+    height: 100vh;
+    width: 100vw;
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #34009b, black);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+.pink {
+    background: linear-gradient(90deg, rgb(81, 112, 255) 0%, rgb(255, 102, 196) 100%) 0px 0px / 256px 256px;
+    width: 200px;
+    height: 200px;
+    transform-origin: 0px 0px;
+    touch-action: pan-x pan-y pinch-zoom;
+    border-radius: 50%;
+    filter: blur(30px);
+}
+.blue {
+    background: linear-gradient(90deg, rgb(78, 158, 238) 0%, rgb(136, 69, 213) 100%) 0px 0px / 256px 256px;
+    width: 200px;
+    height: 200px;
+    transform-origin: 0px 0px;
+    touch-action: pan-x pan-y pinch-zoom;
+    border-radius: 50%;
+    filter: blur(30px);
+}
+.green {
+    background: linear-gradient(90deg, rgb(57, 159, 231) 0%, rgb(71, 162, 11) 100%) 0px 0px / 256px 256px;
+    width: 200px;
+    height: 200px;
+    transform-origin: 0px 0px;
+    touch-action: pan-x pan-y pinch-zoom;
+    border-radius: 50%;
+    filter: blur(30px);
+}
+
+.anim1 {
+    animation: move1 25s infinite;
+}
+.anim2 {
+    animation: move2 30s infinite;
+}
+.anim3 {
+    animation: move3 20s infinite;
+}
+.anim4 {
+    animation: move4 25s infinite;
+}
+
+.cont2 {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    color: #fefefe;
+    position: relative;
+    top: -10vh;
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+    width: 50%;
+}
+
+.btnCont {
+    margin-top: -5vh;
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.a {
+    width: 45%;
+}
+.btnBlack {
+    width: 100%;
+    padding: 6% 22%;
+    border: none;
+    outline: none;
+    color: #fefefe;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: none;
+    background: linear-gradient(45deg, #000, #000, #ff3a5f, #f0b139);
+    background-size: 350%;
+    background-position-x: 0;
+    transition: all 1s;
+}
+.btnWhite {
+    width: 100%;
+    padding: 6% 22%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(45deg, #fefefe, #fefefe, #dcf450, #1bb9b9);
+    background-size: 350%;
+    background-position-x: 0;
+    transition: all 1s;
+    color: #000;
+    cursor: none;
+}
+
+@keyframes move1 {
+    0% {transform: scale(1.9) translate(10vw, 10vh);}
+    25% {transform: scale(.5) translate(30vw, 80vh);}
+    50% {transform: scale(.9) translate(80vw, 60vh);}
+    100% {transform: scale(1.9) translate(10vw, 10vh);}
+}
+@keyframes move2 {
+    0% {transform: scale(1.3) translate(10vw, 10vh);}
+    25% {transform: scale(2) translate(50vw, 60vh);}
+    50% {transform: scale(.5) translate(90vw, 5vh);}
+    100% {transform: scale(1.3) translate(10vw, 10vh);}
+}
+@keyframes move3 {
+    0% {transform: scale(1) translate(10vw, 10vh);}
+    25% {transform: scale(1.2) translate(50vw, 80vh);}
+    50% {transform: scale(.5) translate(90vw, 5vh);}
+    100% {transform: scale(1) translate(10vw, 10vh);}
+}
+@keyframes move4 {
+    0% {transform: scale(.5) translate(90vw, 10vh);}
+    25% {transform: scale(1) translate(30vw, -20vh);}
+    50% {transform: scale(1.5) translate(20vw, 60vh);}
+    100% {transform: scale(.5) translate(90vw, 10vh);}
+}
+
+@media (orientation: portrait) {
+    .text {
+        font-size: 28px;
+        text-align: end; 
+    }
+    .btnCont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10vh;
+    }
+    .a {
+        width: 50%;
+        margin-bottom: 1vh;
+    }
+}
