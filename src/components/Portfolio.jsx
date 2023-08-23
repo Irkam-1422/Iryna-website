@@ -31,7 +31,7 @@ export const Portfolio = () => {
   return (
     <div className="container c2" style={{height: 'auto'}}>
         <div className={styles.portfolio}>Portfolio</div>
-        <div className="">
+        <div style={window.innerHeight>window.innerWidth?{paddingBottom: '25%'}:{}}>
           {projects.map((p,i) => <Project project={p} i={i}/>)}
         </div>
     </div>

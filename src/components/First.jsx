@@ -14,7 +14,7 @@ export const First = () => {
   })  
 
   return (
-    <div className="container c1">
+    <div className="container c1" style={window.innerHeight>window.innerWidth?{paddingBottom: '20%'}:{}}>
         <div className={styles.cont}>
             <div className={styles.titleCont}>
                 <div className={styles.iAm}>I am a</div>
@@ -25,23 +25,23 @@ export const First = () => {
                         .
                     </span>
                 </div>
+                <div className={styles.btnCont}>
+                    <a href="#footer" style={{color: '#fefefe', height: '45px'}}><button className={styles.btnBlack}
+                            onMouseEnter={(e) => e.target.style.backgroundPositionX = '100%'}
+                            onMouseLeave={(e) => e.target.style.backgroundPositionX = '0'}
+                    >
+                    Hire me</button></a>
+                    <a href={require('../assets/cv.pdf')}><button className={styles.btnWhite}
+                            onMouseEnter={(e) => e.target.style.backgroundPositionX = '100%'}
+                            onMouseLeave={(e) => e.target.style.backgroundPositionX = '0'}
+                    >my CV</button></a>
+                </div>
             </div>
             <div className={styles.imgCont} ref={img}>
                 <img src={require('../assets/avatar.jpg')} className={styles.img} />
             </div>
         </div>
         <div className={styles.cont2}>
-            <div className={styles.btnCont}>
-                <a href="#footer" style={{color: '#fefefe'}}><button className={styles.btnBlack}
-                        onMouseEnter={(e) => e.target.style.backgroundPositionX = '100%'}
-                        onMouseLeave={(e) => e.target.style.backgroundPositionX = '0'}
-                >
-                Hire me</button></a>
-                <a href={require('../assets/cv.pdf')}><button className={styles.btnWhite}
-                        onMouseEnter={(e) => e.target.style.backgroundPositionX = '100%'}
-                        onMouseLeave={(e) => e.target.style.backgroundPositionX = '0'}
-                >my CV</button></a>
-            </div>
             <div className={styles.textCont} ref={text}>
                 <div className={styles.aboutMe}>About me</div>
                 <div className="">

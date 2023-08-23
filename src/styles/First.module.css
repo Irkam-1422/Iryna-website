@@ -35,7 +35,7 @@
 .cont2 {
     display: flex;
     margin-top: 5%;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 .btnCont {
     display: flex;
@@ -44,8 +44,6 @@
     align-items: stretch;
     width: 200px;
     position: relative;
-    top: -22vh;
-    left: 9.5vw;
 }
 .btnBlack {
     width: 100%;
@@ -82,7 +80,7 @@
 .textCont {
     width: 44%;
     text-align: end;
-    margin-left: 4%;
+    margin-right: 8%;
     transition: all 1s;
 }
 .aboutMe {
@@ -90,4 +88,23 @@
     color: #fefefe;
     font-weight: 600;
     font-family: 'Russo One', sans-serif;
+}
+
+@media (orientation: portrait) {
+    .titleCont {
+        margin-left: -9%;
+        font-size: 50px;
+    }
+    .a {
+        height: 45px;
+    }
+    .imgCont {
+        width: 82%;
+        margin-top: 15%;
+    }
+    .textCont {
+        width: 80%;
+        margin-top: 5%;
+        margin-bottom: 30%;
+    }
 }

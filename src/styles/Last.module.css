@@ -37,3 +37,27 @@
 .img {
     width: 100%;
 }
+@media (orientation: portrait) {
+    .serviceCont {
+      min-width: 300px;
+    }
+    .techs {
+      display: flex;
+      position: relative;
+      left: -28vw;
+      width: 200px;
+    }
+    .text {
+      font-size: 17px;
+      width: 70%;
+      margin: 0;
+      color: #000;
+      text-align: initial;
+      margin-top: -7%;
+      font-family: 'Russo One', sans-serif;
+      font-weight: 100;
+    }
+    .offer {
+        font-size: 40px;
+    }
+  }

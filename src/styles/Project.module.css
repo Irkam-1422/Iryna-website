@@ -120,3 +120,35 @@
     margin-bottom: -5vh;
     font-family: 'Russo One', sans-serif;
 }
+
+@media (orientation: portrait) {
+    .cont, .contRev {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 20%;
+    }
+    .textCont, .textContRev {
+        width: 76%;
+        padding: 0;
+    }
+    .btnBlack {
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    .btnWhite {
+        height: 28px;
+        width: 400%;
+    }
+    .imgCont, .imgContRev {
+        width: 70%;
+        margin-bottom: 10%;
+    }
+    .img, .imgRev {
+        top: -1.5vh;
+    }
+    .portfolio {
+        font-size: 40px;
+    }
+}

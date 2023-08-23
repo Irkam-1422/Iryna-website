@@ -9,3 +9,13 @@
 .hidden {
     opacity: 0;
 }
+
+@media (orientation: portrait) {
+    .right {
+        transform: translateX(30%);
+    }
+    .left {
+        transform: translateX(-30%);
+    }
+  }
+/*     transform: translateX(30%); */

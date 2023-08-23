@@ -26,9 +26,11 @@ export const Project = ({project,i}) => {
                 <div className={styles.title}>{project.title}</div>
                 <div className="">{project.desc}</div>
                 <div className="">
-                    <span>Stack:</span>
+                    <br />
+                    <span style={{fontWeight: '600'}}>Stack: </span>
                     {project.stack}
                 </div>
+                <br />
                 <div className={btnCont}>
                 {typeof(project.gitLink) == 'string' ? 
                     <a href={project.gitLink}
@@ -59,7 +61,7 @@ export const Project = ({project,i}) => {
                     </div>
                 }
                 {project.preview && <a href={project.preview}><button className={styles.btnWhite}
-                        style={{height: '50px'}}
+                        style={window.innerHeight>window.innerWidth?{}:{height: '50px'}}
                         onMouseEnter={(e) => e.target.style.backgroundPositionX = '100%'}
                         onMouseLeave={(e) => e.target.style.backgroundPositionX = '0'}
                 >Preview</button></a>}

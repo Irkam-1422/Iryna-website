@@ -18,10 +18,21 @@ input,textarea {
     border-radius: 23px; 
     font-family: inherit;
     transition: all 1s;
- }
- input::placeholder,textarea::placeholder {
+}
+
+input:nth-child(1) {
+    transition: all 1.2s;
+}
+textarea {
+    transition: all 1.4s;
+}
+input[type="submit"] {
+    transition: all 1.8s;
+}
+
+input::placeholder,textarea::placeholder {
     color: rgba(0, 0, 0, 0.5);
- }
+}
 a {
     color: #000;
     text-decoration: none;
@@ -90,4 +101,32 @@ a:hover {
     position: relative;
     margin-bottom: -9vh;
     font-family: 'Russo One', sans-serif;
+}
+
+@media (orientation: portrait) {
+    li {
+        margin: 1% 0;
+        font-size: 12px;
+    }
+    .firstCont {
+        top: 4%;
+        margin: 0;
+    }
+    .title1 {
+        display: none;
+    }
+    .form {
+        top: 0;
+        left: 6%;
+        width: 83%;
+    }
+    .title2 {
+        font-size: 30px;
+        left: 0;
+        margin-left: 20%;
+        font-family: 'Russo One', sans-serif;
+    }
+    .reach {
+        font-size: 40px;
+    }
 }

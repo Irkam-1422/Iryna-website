@@ -29,3 +29,9 @@
     margin-top: 1%;
     padding: 0 1%;
 }
+
+@media (orientation: portrait) {
+    .cont {
+        min-width: 300px;
+    }
+  }
